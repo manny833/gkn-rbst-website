@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Guru Ka Niwas Gurdwara//News//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nishan-sahib-seva-20261031@gkn-rbst.co.uk
+DTSTAMP:20261029T223000Z
+DTSTART:20261031T100000Z
+DTEND:20261031T130000Z
+SUMMARY:Nishan Sahib Seva – Guru Ka Niwas Gurdwara
+LOCATION:Guru Ka Niwas (Ramgarhia Board Sikh Gurdwara)\, 1 Rothesay Gardens\, Wolverhampton WV4 6FD
+DESCRIPTION:Nishan Sahib Seva at Guru Ka Niwas. All are welcome. https://gkn-rbst.co.uk/news-nishan-sahib-seva.html
+URL:https://gkn-rbst.co.uk/news-nishan-sahib-seva.html
+END:VEVENT
+END:VCALENDAR
