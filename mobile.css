@@ -1,0 +1,152 @@
+/* Mobile fit fixes — loaded last on every page */
+@media (max-width:780px){
+  p,li,a,dd,dt,td,th,small,figcaption,blockquote,address,label{overflow-wrap:break-word}
+  h1,h2,h3,h4{overflow-wrap:normal;word-break:normal;max-width:100%}
+  img,video,svg,iframe{max-width:100%}
+  .v9-living-heading h2{font-size:clamp(42px,12.5vw,78px)}
+  .v9-living-heading p{font-size:19px}
+  .gkh-photo-fallback{padding:22px}
+  .gkh-photo-fallback span{font-size:clamp(40px,13vw,72px)}
+  .chapter-cta h2{font-size:clamp(28px,8.4vw,44px)}
+  .v9-history-number-art>span{font-size:clamp(90px,28vw,140px)}
+}
+@media (max-width:420px){
+  .v9-living-heading h2{font-size:clamp(38px,12vw,52px)}
+}
+
+/* Readable mobile menu at every width where the Menu button shows */
+.site-header .menu-button,
+.site-header .menu-button span,
+.site-header .menu-button b{color:#f6e2c2!important;border-color:#e5b773b3!important;background:transparent!important}
+.site-header .hamburger i{background:#ecc081!important}
+.site-header .mobile-nav{background:#0d2a47!important;border-top:1px solid #e3b8783c!important}
+.site-header .mobile-nav a{color:#f6e4c7!important;border-bottom-color:#e3b87840!important;font-size:18px;font-weight:600;padding:15px 4px}
+.site-header .mobile-nav a:hover{color:#ffffff!important}
+.site-header .mobile-nav a[aria-current=page]{color:#f9c67e!important;font-weight:750}
+.site-header .menu-button:focus-visible,.site-header .mobile-nav a:focus-visible{outline:3px solid #f1be79;outline-offset:3px}
+
+/* Real photos in chapter banners (replaces decorative numbers) */
+.v8-chapter.has-photo .v8-chapter-folio{display:none}
+.v8-chapter-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.95)}
+.v8-chapter--questions.has-photo .v8-chapter-veil{background:linear-gradient(90deg,rgba(235,217,183,.96),rgba(235,217,183,.86) 48%,rgba(235,217,183,.15))}
+.v8-chapter--location.has-photo .v8-chapter-veil{background:linear-gradient(90deg,#e5e7df 0%,rgba(229,231,223,.95) 45%,rgba(229,231,223,.1) 100%)}
+.v8-chapter--arrival.has-photo .v8-chapter-veil{background:linear-gradient(90deg,#f2ece0 0%,rgba(242,236,224,.94) 45%,rgba(242,236,224,.12) 100%)}
+.nw-hero.has-photo{isolation:isolate}
+.nw-hero-photo{position:absolute;top:0;right:0;height:100%;width:46%;object-fit:cover;object-position:50% 35%;z-index:-1;-webkit-mask-image:linear-gradient(90deg,transparent,#000 45%);mask-image:linear-gradient(90deg,transparent,#000 45%);opacity:.85}
+@media (max-width:780px){
+ .v8-chapter--questions.has-photo .v8-chapter-veil{background:linear-gradient(180deg,rgba(235,217,183,.93),rgba(235,217,183,.74))}
+ .v8-chapter--location.has-photo .v8-chapter-veil{background:linear-gradient(180deg,rgba(229,231,223,.93),rgba(229,231,223,.72))}
+ .v8-chapter--arrival.has-photo .v8-chapter-veil{background:linear-gradient(180deg,rgba(242,236,224,.93),rgba(242,236,224,.72))}
+ .nw-hero-photo{width:100%;opacity:.28;-webkit-mask-image:none;mask-image:none}
+}
+
+/* One colour per heading: highlighted words match the rest of the heading */
+h1 em,h2 em,h3 em,h4 em,
+h1 i,h2 i,h3 i,h4 i,
+.v8-footer-prelude span em,.welcome-intro em{color:inherit!important}
+
+/* Mobile readability & tap targets */
+@media (max-width:1100px){
+  .v9-eyebrow,.overline,.v9-label,.nw-tag,.nw-crumb,.v8-chapter-kicker{font-size:12px!important;line-height:1.5}
+  .gkh-credit,.gkh-tiny,.nw-note,.ig-credit,figcaption,.v9-history-notes p,.v9-art-note p,.v9-note p,main small{font-size:13px!important;line-height:1.55}
+  main p{min-height:0}
+  /* comfortable thumb targets */
+  .footer-links a{display:flex;align-items:center;min-height:44px}
+  .v8-chapter-breadcrumb a,.nw-crumb a,.breadcrumb{display:inline-flex;align-items:center;min-height:44px}
+  .text-link,.v9-text-link,.nw-more,.nw-upcoming a,.ig-follow,.nw-home-all,.chapter-cta-link,.gkh-scroll,.v9-scroll,
+  a[href^="https://www.google.com/maps"],.v9-footer-contact a,.site-credit a,.footer-bottom a{display:inline-flex;align-items:center;min-height:44px}
+  .nw-tl a{display:inline-flex;align-items:center;min-height:40px}
+  .v9-source-link,a[href="#beginnings"]{display:inline-flex;align-items:center;min-height:44px}
+}
+
+@media (max-width:1100px){a[href="#heritage-preview"]{display:inline-flex;align-items:center;min-height:44px}}
+@media (max-width:780px){
+  .v9-bunga>*,[class*="-grid"]>*,[class*="-layout"]>*{min-width:0}
+  .v9-bunga-copy h2{font-size:clamp(40px,12vw,78px)}
+}
+
+/* ===== Consistent page banners: one height, one title size on every page ===== */
+.v9-hero,.v8-chapter,.v9-history-hero,.gkh-hero,.nw-hero{height:640px!important;min-height:640px!important;max-height:640px!important;box-sizing:border-box;overflow:hidden}
+.nw-hero{display:flex;align-items:center;padding-top:0!important;padding-bottom:0!important}
+.nw-hero>.container{width:min(100% - var(--gutter)*2,1360px)}
+:is(.v9-hero,.v8-chapter,.v9-history-hero,.gkh-hero,.nw-hero) h1{font-size:clamp(46px,6.2vw,92px)!important;line-height:1!important}
+@media (max-width:780px){
+  .v9-hero,.v8-chapter,.v9-history-hero,.gkh-hero,.nw-hero{height:600px!important;min-height:600px!important;max-height:600px!important}
+  :is(.v9-hero,.v8-chapter,.v9-history-hero,.gkh-hero,.nw-hero) h1{font-size:clamp(38px,11.5vw,52px)!important}
+}
+.v9-hero-bottom,.gkh-bottom-rule{display:none!important}
+.v9-hero-grid,.v9-history-hero-grid,.gkh-hero-grid{min-height:0!important;height:100%!important;padding-top:0!important;padding-bottom:0!important;align-items:center!important;align-content:center!important;box-sizing:border-box}
+.v9-hero,.v9-history-hero,.gkh-hero{display:flex!important;flex-direction:column;justify-content:center}
+.v9-hero>.container,.v9-history-hero>.container,.gkh-hero>.container{width:min(100% - var(--gutter)*2,1360px)}
+@media (max-width:780px){.gkh-hero-visual{display:none!important}.v9-hero-grid{padding-top:24px!important}}
+@media (min-width:781px){.gkh-hero-visual{max-height:520px}}
+
+/* ===== Site-wide consistency ===== */
+/* Section headings: one size scale */
+main h2{font-size:clamp(36px,4.3vw,62px)!important;line-height:1.06!important;letter-spacing:-.04em!important}
+main :is(.nw-card,.chapter-cta,.nw-visit-note,.nw-upcoming,.nw-home-card) h2{font-size:clamp(26px,2.5vw,36px)!important;line-height:1.15!important;letter-spacing:-.03em!important}
+@media (max-width:780px){
+  main h2{font-size:clamp(30px,8.4vw,42px)!important}
+  main :is(.nw-card,.chapter-cta,.nw-visit-note,.nw-upcoming,.nw-home-card) h2{font-size:clamp(24px,6.6vw,30px)!important}
+}
+/* Buttons: every call-to-action uses the site's gold button */
+.nw-btn,.chapter-cta-link{background:linear-gradient(120deg,#ffd899,#df9b45)!important;color:#091e34!important;border:0!important;border-radius:4px!important;padding:15px 25px!important;min-height:55px;font-size:13px!important;font-weight:800!important;letter-spacing:.01em;box-shadow:0 7px 26px rgba(11,19,35,.12);display:inline-flex!important;align-items:center;gap:24px;text-decoration:none}
+.chapter-cta-link span,.nw-btn span{color:inherit!important}
+.nw-btn--ghost{background:transparent!important;border:1px solid currentColor!important;box-shadow:none;color:#0A2A5B!important}
+.nw-btn:hover,.chapter-cta-link:hover{filter:brightness(1.05)}
+/* Breadcrumbs: same style everywhere, no page counters */
+.v8-chapter-breadcrumb>span{display:none!important}
+.nw-crumb{font-size:12px!important;letter-spacing:.06em!important;text-transform:none!important;font-weight:600!important}
+.nw-crumb a{color:inherit!important;opacity:.9}
+.v8-chapter-breadcrumb{font-size:12px!important;letter-spacing:.06em!important;font-weight:600}
+/* Small labels: one size and spacing */
+main :is(.v9-label,.nw-tag,.overline,.v9-eyebrow,.v8-chapter-kicker,.section-label){font-size:11px!important;letter-spacing:.18em!important;font-weight:800!important}
+@media (max-width:1100px){main :is(.v9-label,.nw-tag,.overline,.v9-eyebrow,.v8-chapter-kicker,.section-label){font-size:12px!important}}
+@media (max-width:1100px){.gkh-hero-stamp{right:12px!important;left:auto!important}}
+
+/* ===== Compact footer ===== */
+footer .v8-footer-prelude{padding-top:40px!important;padding-bottom:14px!important}
+footer .v8-footer-prelude span{font-size:clamp(34px,4vw,56px)!important}
+footer .footer-main{padding:26px 0 22px!important;gap:28px!important;align-items:flex-start}
+footer .footer-brand b{font-size:26px!important}
+footer .footer-main p{margin:6px 0!important}
+footer .footer-links{grid-template-columns:repeat(5,auto)!important;gap:2px 26px!important;max-width:none!important;width:auto!important}
+footer .footer-links a{min-height:34px!important;display:flex;align-items:center}
+footer .v9-footer-contact{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 28px!important;padding:16px 0!important}
+footer .v9-footer-contact>*{min-height:0!important;margin:0!important;display:block!important}
+footer .footer-bottom{padding:10px 0!important}
+footer .footer-bottom a{min-height:32px!important}
+footer .site-credit{padding:10px 0 16px!important;gap:6px 20px!important}
+footer .site-credit a{min-height:32px!important}
+@media (max-width:1100px){footer .footer-links{grid-template-columns:repeat(3,auto)!important}}
+@media (max-width:780px){
+  footer .v8-footer-prelude{padding-top:28px!important;padding-bottom:10px!important}
+  footer .v8-footer-prelude span{font-size:clamp(30px,9vw,40px)!important}
+  footer .footer-main{flex-direction:column;gap:18px!important;padding:20px 0 16px!important}
+  footer .footer-links{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:0 14px!important;width:100%!important}
+  footer .footer-links a{min-height:40px!important}
+  footer .v9-footer-contact{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px!important;padding:14px 0!important}
+  footer .footer-bottom{flex-direction:row!important;flex-wrap:wrap;justify-content:space-between;align-items:center!important;gap:0 14px!important}
+  footer .footer-bottom small:nth-child(2){display:none}
+  footer .site-credit{flex-direction:column;gap:2px!important}
+}
+footer .footer-bottom{align-items:center!important}
+
+/* ===== Guru Nanak Dev Ji portrait: always shown in full, never cropped or zoomed ===== */
+.v9-portrait-panel{aspect-ratio:4/5!important;height:auto!important;max-height:540px;width:auto!important;max-width:100%;justify-self:end}
+.v9-portrait-panel img,.v9-portrait-panel:hover img{object-fit:contain!important;object-position:center!important;transform:none!important}
+.v9-history-hero-grid>img[src*="guru-nanak-art"]{aspect-ratio:4/5;height:auto!important;max-height:500px;width:auto!important;max-width:100%;object-fit:contain!important;justify-self:end}
+.v9-small-gallery-grid>img[src*="guru-nanak-art"]{aspect-ratio:4/5;height:auto!important;object-fit:contain!important}
+img[src*="guru-nanak-art"]{object-fit:contain!important}
+
+/* ===== Content protection ===== */
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+img,video{-webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none}
+main img,footer img,header img{pointer-events:none}
+input,textarea,select,a[href^="tel:"],a[href^="mailto:"],address,.v9-footer-contact,.site-credit-details,.allow-copy{-webkit-user-select:text;user-select:text}
+.gk-copyright{font-size:11px;color:#9fb3c6;margin:0;padding:0 0 14px}
+@media print{body{display:none!important}}
+
+/* no-italics: plain, single-style type site-wide */
+*,*::before,*::after,em,i,cite,blockquote,q{font-style:normal!important}
+h1 em,h2 em,h3 em,h4 em{font-weight:inherit}

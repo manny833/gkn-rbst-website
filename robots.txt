@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gkn-rbst.co.uk/sitemap.xml
