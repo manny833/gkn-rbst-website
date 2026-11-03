@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 660" role="img" aria-labelledby="title desc">
+<title id="title">Illustrated mid-century research laboratory façade</title><desc id="desc">A stylised architectural study of the former GKN research laboratory era. It is an original illustration, not an archival survey or photograph.</desc>
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1c4055"/><stop offset="1" stop-color="#0b1d2e"/></linearGradient><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#d8b98a" stroke-width=".6" opacity=".22"/></pattern></defs>
+<rect width="900" height="660" fill="url(#b)"/><rect width="900" height="660" fill="url(#grid)"/>
+<g fill="none" stroke="#ddc394" stroke-width="2" opacity=".75">
+<path d="M98 550H797V278H705V233H622V184H271V218H151V266H98Z"/><path d="M151 550V266H271V550M622 550V184M705 550V278"/><path d="M271 184L320 151H570L622 184"/>
+<path d="M301 218h290v299H301z" stroke-width="1.4"/>
+</g>
+<g fill="#dec89c" opacity=".18"><rect x="300" y="218" width="292" height="300"/><rect x="104" y="277" width="165" height="273"/><rect x="627" y="278" width="164" height="272"/></g>
+<g fill="none" stroke="#e2c58a" opacity=".75" stroke-width="1.7">
+<path d="M310 265h270M310 347h270M310 429h270M312 503h266M99 365h170M99 450h170M624 365h173M624 450h173"/>
+<path d="M330 232v271M378 232v271M426 232v271M474 232v271M522 232v271M570 232v271"/>
+<path d="M128 289v260M179 289v260M230 289v260M663 289v260M748 289v260"/>
+<path d="M70 552h755M115 570h690M142 587h641"/>
+</g>
+<g fill="none" stroke="#f0d3a0" stroke-width=".85" stroke-dasharray="7 5" opacity=".65"><path d="M271 135v419M622 135v419M55 184h786M55 551h786M55 135h786"/><path d="M50 90h800"/></g>
+<g fill="#f0d3a0" font-family="Georgia,serif" opacity=".88"><text x="64" y="68" font-size="22" letter-spacing="4">RESEARCH LABORATORIES</text><text x="69" y="633" font-size="15" letter-spacing="5">ARCHITECTURAL STUDY · MID-CENTURY</text><text x="770" y="628" font-size="40" font-weight="bold">GKN</text></g>
+</svg>
