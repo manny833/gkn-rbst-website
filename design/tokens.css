@@ -1,0 +1,13 @@
+:root{
+ --forest:#0A2A5B;--forest-dark:#061F45;--forest-deep:#082650;--saffron:#dca256;--saffron-deep:#c58434;
+ --paper:#f8f6ef;--paper-warm:#f0ebe1;--cream:#fdfaf4;--ink:#20372f;--quiet:#5e6a60;--line:#deddd2;--white:#fff;
+ --font-display:Georgia,'Iowan Old Style','Times New Roman',serif;
+ --font-body:'Avenir Next','Segoe UI',Arial,sans-serif;
+ --font-gurmukhi:'Noto Sans Gurmukhi','Nirmala UI',sans-serif;
+ --container:1280px;--gutter:clamp(22px,5.5vw,86px);
+ --s1:8px;--s2:12px;--s3:16px;--s4:24px;--s5:32px;--s6:48px;--s7:64px;--s8:96px;--s9:128px;
+ --tiny:.68rem;--small:.83rem;--base:1rem;--body:1.06rem;--lead:1.35rem;
+ --surface-warm:#f2ede3;--content-wide:1380px;--action-ink:#0A2A5B;--faq-line:#d5d9ce;
+ --focus:#f5b760;--transition:190ms;--ease:cubic-bezier(.22,1,.36,1);
+}
+/* Never use untracked brand colours outside this token file; no external fonts, analytics or scripts; prefer real approved local photos and label illustrations; don't invent hours. */
