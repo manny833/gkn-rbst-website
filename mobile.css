@@ -150,3 +150,15 @@ input,textarea,select,a[href^="tel:"],a[href^="mailto:"],address,.v9-footer-cont
 /* no-italics: plain, single-style type site-wide */
 *,*::before,*::after,em,i,cite,blockquote,q{font-style:normal!important}
 h1 em,h2 em,h3 em,h4 em{font-weight:inherit}
+
+/* Guru Ji portrait: nothing is ever placed over the image; the quote sits below it */
+.v9-portrait-panel{aspect-ratio:auto!important;height:auto!important;max-height:none!important;width:min(100%,420px)!important;display:flex!important;flex-direction:column;overflow:visible!important;background:transparent!important;border:0!important;box-shadow:none!important;align-self:center}
+.v9-portrait-panel::after{content:none!important;display:none!important}
+.v9-portrait-panel>span{display:none}
+.v9-portrait-frame{aspect-ratio:4/5;width:100%;max-height:460px;background:#efe0c8;border:1px solid #ffffff4f;box-shadow:0 25px 65px #09152b42;overflow:hidden}
+.v9-portrait-frame img{width:100%;height:100%;object-fit:contain!important;transform:none!important}
+.v9-portrait-quote{position:static!important;margin-top:16px;text-align:center;color:#fffaf0;font-size:18px;line-height:1.4;text-shadow:none}
+.v9-portrait-quote small{margin-top:10px}
+@media(max-width:780px){.v9-portrait-panel{width:100%!important;margin:28px auto 0}.v9-portrait-quote{font-size:17px}}
+/* Home hero grows to fit the full portrait and quote on small screens, so nothing overlaps Guru Ji's image */
+@media(max-width:780px){.v9-hero{height:auto!important;max-height:none!important;min-height:600px;padding-bottom:40px}.v9-hero-grid{height:auto!important}}
