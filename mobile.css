@@ -162,3 +162,6 @@ h1 em,h2 em,h3 em,h4 em{font-weight:inherit}
 @media(max-width:780px){.v9-portrait-panel{width:100%!important;margin:28px auto 0}.v9-portrait-quote{font-size:17px}}
 /* Home hero grows to fit the full portrait and quote on small screens, so nothing overlaps Guru Ji's image */
 @media(max-width:780px){.v9-hero{height:auto!important;max-height:none!important;min-height:600px;padding-bottom:40px}.v9-hero-grid{height:auto!important}}
+
+/* Nishan Sahib banners: always show the top with the Khanda and flag */
+img[src*="real/nishan-sahib.webp"]{object-position:50% 2%!important}
